@@ -1,0 +1,651 @@
+<!-- 
+     
+
+// function calculator(a,b,op){
+//     if (op=="+"){
+//         return a+b;
+//     }
+//     else if(op=='-'){
+//         return a-b;
+//     }
+//     else if(op=='*'){
+//         return a*b;
+//     }
+//     else if(op=='/'){
+//         return a/b;
+
+//         }
+//     else {
+//         return "invalid operator";
+//     }    
+
+// }
+
+// let a=Number(prompt("enter first number"));
+// let b=Number(prompt("enter second number"));
+// let op=prompt("enter operator");
+// let result=calculator(a,b,op);
+// alert("the result is "+ result);
+
+
+// function smartCalculator(a,b,op){
+//     if(op=='+'){
+//         return a+b;
+//     }
+//     else if(op=='-'){
+//         return a-b;
+//     }
+//     else if(op=='*'){
+//         return a*b;
+//     }
+// else if(op=='/'){
+//     return a/b;
+
+// }
+// else {
+//     return null;
+// }
+//     }
+//     let a=Number(prompt("enter first number"));
+//     let b=Number(prompt("enter second number"));
+//     let op=prompt("enter operator");
+//     let result=smartCalculator(a,b,op);
+//     if (result!=null) {
+//         alert("the result of "+a + op +  b+ " is "+ result);
+//     }
+//     else{
+//         alert("sorry that is an invalid operator");
+//     }
+// function 
+
+// let flag=true;
+// function smartCalculator(a,b,op){
+//     if(op=='+'){
+//         return a+b;
+//     }
+//     else if(op=='-'){
+//         return a-b;
+//     }
+//     else if(op=='*'){
+//         return a*b;
+//     }
+//     else if(op=='/'){
+//         return a/b;
+//     }
+//     else{
+//         return null;
+//     }
+//     }
+// while(flag){
+//     let op=prompt("enter operator");
+//     if( op.toLowerCase()=='exit'){
+//     alert("thank you for using calculator")
+//     flag=false;
+// }
+// else{
+// let a=Number(prompt("enter first number"));
+// let b=Number(prompt("enter second number"));
+
+
+
+//     let result=smartCalculator(a,b,op);
+//     if(result!=null){
+//         alert("the result of"+""+a+""+op+""+b +"is"+result);
+//     }
+//     else{
+//         alert("invalid operator");
+//     }
+// }
+// }
+
+// let dream=prompt("what is your dream?");
+// let days=Number(prompt("how many days do you want to work for it?"));
+// let hours=Number(prompt("How many hours can you work each day?"));
+// let effort=days*hours;
+// alert("You will work "+effort+" hours toward \""+dream+"\".Keep going. you are unstoppable!");
+
+// let name=prompt("what is your name?");
+// let belief=prompt("do you believe in yourself?(yes/no)");
+// if (belief=="yes"){
+//     let days=Number(prompt("how many days do you want to work for?"));
+//     let hours=Number(prompt("How many hours can you work each day?"));
+//     let effort=days*hours;
+//     alert("You will work "+hours+ " hours a day for "+days+ " days.Thats "+effort+" hours.Keep going. you are unstoppable!");
+
+
+// }
+// else{
+//     alert(name+" belief comes first. you are capable-take one small step today and start believing in yourself.");
+// }
+
+
+// let weather=prompt("whats the weather like today?(sunny/rainy)");
+// let mood=prompt("how are you feeling today?(lazy/energetic)");
+// if(weather=='sunny'){
+//     if(mood=='energetic'){
+//         alert("go for a run in the park");
+//     }
+//     else{
+//         alert("sit and enjoy sunshine");
+//     }
+// }
+// else{
+//     if(mood=='energetic'){
+//         alert('clean your room');
+//     }
+//     else{
+//         alert('read a book');
+//     }
+// }
+
+// let weather=prompt("what's the weather today?(sunny/rainy/cloudy)");
+// let mood=prompt("what's your mood today?(lazy/energetic/neutral)");
+// if(weather=='sunny'){
+//     if(mood=='lazy'){
+//         alert('enjoy the sunshine with a cozy book on the balcony')
+//     }
+// }
+// if(weather=='lazy'){
+//     if(mood=='energetic'){
+//         alert('perfect time to clean and dance in the music');
+//     }
+// }
+// if(weather=='cloudy'){
+//     if(mood=='neutral'){
+//         alert('go for a peaceful walk to clear your mind');
+//     }
+// }
+// let weather=prompt("what's the weather today?(sunny/rainy/cloudy)");
+// let mood=prompt("what's your mood today?(lazy/energetic/neutral)");
+// if(weather=='sunny' && mood=='lazy'){
+//     alert('enjoy the sunshine with a cozy book on the balcony')
+// }
+// else if(weather=='rainy' && mood=='energetic'){
+//     alert('perfect time to clean and dance in the music');
+// }
+// else if(weather=='cloudy' && mood=='neutral'){
+//     alert('go for a peaceful walk to clear your mind');
+// }
+// else{
+//     alert('no specific recommendation, just be kind to yourself today');
+// }
+
+// //let habit=prompt("what habit do you want to build?");
+// let days=Number(prompt("How many days do you want to build it for?"));
+// let minutes=Number(prompt("how many minutes per day are you willing to spend?"));
+// let total=days*minutes;
+// let message="By practicing "+habit+" for "+minutes+ " minutes a day for "+days+" days, you will invest "+total+ " minutes into your growth. Keep going!";
+// alert(message);
+// let numGrat=Number(prompt("how many things are you grateful for today?"));
+// let gratitudes=[];
+// for(let i=0;i<numGrat;i++){
+//     let gratitude=prompt("enter your gratitude "+(i+1)+":");
+//     gratitudes.push(gratitude);
+// }
+// for(let i=0;i<numGrat;i++){
+//     alert("You are grateful for: "+gratitudes[i])
+// }
+// let numDreamTeam=Number(prompt("how many people do you want on your dream team?"));
+// let dreamTeam=[];
+// for(let i=0;i<numDreamTeam;i++){
+//     let teamMember=prompt("Enter name  "+(i+1)+":");
+//     dreamTeam.push(teamMember);
+// }
+// for( let i=0;i<numDreamTeam;i++){
+//     alert("Dream Team Member "+(i+1)+" : "+dreamTeam[i]);
+// }
+// alert("let's go dream team!");
+
+// let numTasks=Number(prompt("How many tasks do you have to do today?"));
+// let tasks=[];
+// let completed=[];
+// for(let i=0;i<numTasks;i++){
+//     let task=prompt("Enter your task "+(i+1)+":");
+//     numTasks.push(task);
+//     completed.push(false);
+// }
+// while(true){
+//     let taskNum=Number(prompt("Enter the number of task you completed, type 0 to quit"));
+//     if(taskNum==0){
+//        break;
+//     }
+//     else if(taskNum>0 && taskNum<numTasks && !completed[taskNum-1]){
+//         completed[taskNum-1]=true;
+//         alert("task"+taskNum+" is marked as completed");
+//     }
+//     else{
+//         alert("You have already completed this or invalid task number");
+//     }
+// }
+// alert("remaining tasks:")
+// for(i=0;i<numTasks;i++){
+//     if(!completed[taskNum-1]){
+//         alert("task"+(i+1)+":"+tasks[i]);
+//     }
+// }
+
+// let numTasks=Number(prompt("How many tasks do you have to do today?"));
+// let tasks=[];
+// let completed=[];
+// for(let i=0;i<numTasks;i++){
+//     let task=prompt("Enter task"+(i+1)+":");
+//     tasks.push(task);
+//     completed.push(false);
+// }
+
+// while(true){
+//     let compTasks=Number(prompt("enter the number of tasks you completed or type 0 to quit."));
+//     if(compTasks==0){
+//         break;
+//     }
+//     else if(compTasks>0 && compTasks<=numTasks && !completed[compTasks-1]){
+//         completed[compTasks-1]=true;
+//         alert("task"+compTasks+"is completed");
+
+//     }
+//     else{
+//         alert("Task completed or invalid number");
+//     }
+//     }
+
+//     alert("remaining tasks: ");
+//     for(let i=0;i<numTasks;i++){
+//         if(!completed[i]){
+//             alert("task"+(i+1)+":"+tasks[i]);
+//         }
+//     }
+
+// alert("Menu");
+// alert("1.View taks with status");
+// alert("Mark tasks as done");
+// alert("3. quit");
+// let choice=Number("Enter your choice(1/2/3):");
+
+// if(choice=='3'){
+//     alert("quitting");
+//     break;
+// }
+// else if(choice=='2'){
+//     let compTasks=Number(prompt("enter the number of tasks you completed or type 0 to quit."));
+//     if(compTasks==0){
+//         break;
+//     }
+//     else if(compTasks>0 && compTasks<=numTasks && !completed[compTasks-1]){
+//         completed[compTasks-1]=true;
+//         alert("task"+compTasks+"is completed");
+
+//     }
+//     else{
+//         alert("Task completed or invalid number");
+//     }
+// }
+
+// //let numTasks=Number(prompt("How many tasks do you have today?"));
+// let tasks=[];
+// let completed=[];
+// for(let i=0;i<numTasks;i++){
+//     let task=prompt("Enter task"+(i+1)+":");
+//     tasks.push(task);
+//     completed.push(false);
+// }
+// let taskDone=Number(prompt("enter the number of the task you completed"));
+// completed[taskDone-1]=true;
+//     let result="Your tasks\n";
+//     for(let i=0;i<numTasks;i++){
+//         result +=(i+1)+"."+tasks[i];
+//         result +=completed[i]?"(completed)\n":"(Pending)\n";
+//     }
+
+// alert(result);
+
+// let numTasks=Number(prompt("How many tasks do you have today?"));
+// let tasks=[];
+// let completed=[];
+// for(i=0;i<numTasks;i++){
+//     let task=prompt(" Enter task "+(i+1)+":");
+//     tasks.push(task);
+//     completed.push(false);
+// }
+// let taskCompleted=prompt("enter the number of the task you completed");
+// completed[taskCompleted-1]=true;
+// let result="remaining tasks\n";
+// for(let i=0;i<numTasks;i++){
+//     result +=(i+1)+"."+tasks[i];
+//     result +=completed[i]?" completed\n":" pending\n";
+// }
+// alert(result);
+// let numHabits=Number(prompt("How many habits do you want to track today"));
+// let habits=[];
+// let completed=[];
+// for(let i=0;i<numHabits;i++){
+//     let habit=prompt("enter habit"+(i+1)+":");
+//      habits.push(habit);
+//      completed.push(false);
+// }
+// let habitCompleted=Number(prompt("enter the number of the habit you completed"));
+// completed[habitCompleted-1]=true;
+// let result="The habits tracker status\n";
+// for(let i=0;i<numHabits;i++){
+//     result +=(i+1)+":"+habits[i];
+//     result +=completed[i]?"completed\n":"pending\n";
+// }
+// alert(result);
+// let numHabits=Number(prompt("How many habits do you want to track today"));
+// let habits=[];
+// let completed=[];
+// for(let i=0;i<numHabits;i++){
+//     let habit=prompt("enter habit"+(i+1)+":");
+//     habits.push(habit);
+//     completed.push(false);
+// }
+
+// while(true){
+//     let menu="Menu\n.1.Mark a habit as done\n.2.View habit status.3.Quit";
+//     let choice=prompt("Enter the choice(1/2/3)");
+//     if(choice=='1'){
+//         let habitCompleted=Number(prompt("enter the number of the habit you completed"));
+//         completed[habitCompleted-1]=true;
+//     }
+//     else if(choice=='2'){
+//         let result="The habits tracker status\n";
+//         for(let i=0;i<numHabits;i++){
+//             result +=(i+1)+":"+habits[i];
+//             result +=completed[i]?"completed\n":"pending\n";
+//         }
+//         alert(result);
+//     }
+//     else {
+//         alert("quitting");
+//         break;
+//     }
+// }
+
+
+ <html>
+<head>
+    <title>Habit Tracker</title>
+    <script >
+let numHabits=Number(prompt("How many habits do you want to track today?"));
+let habits=[];
+let completed=[];
+for(let i=0;i<numHabits;i++){
+    let habit=prompt("Enter habit"+(i+1)+":");
+    habits.push(habit);
+    completed.push(false);
+}
+while (true){
+    let menu="Menu\n1.Mark a habit as completed\n2.View habit tracker status\n3.Quit\n";
+    let choice=prompt(menu);
+    if(choice=='1'){
+        let habitCompleted=prompt("Enter the numbers of the habits you completed separated by commas");
+        let habitNumbers=habitCompleted.split(',');
+        for( let num of habitNumbers){
+           let habitNum=Number(num.trim());
+           if(habitNum>0 && habitNum<numHabits){
+            completed[habitNum-1]=true;
+            alert("Habit"+habitNum+"is marked as completed");
+           }
+           else{
+            alert("invalid number");
+           }
+        }
+    }
+    else if (choice=='2'){
+        let result="Habit tracker status\n";
+        for(let i=0;i<numHabits;i++){
+             result += (i+1)+":"+habits[i];
+             result+=completed[i]?"completed\n":"pending\n";
+    
+    }
+    alert(result);
+}
+else if (choice=='3'){
+    alert("quitting");
+    break;
+}
+else{
+    alert("Invalid choice");
+}
+}
+</script>
+</head>
+ </html>
+ --> 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+        function getHabits(){
+            let numHabits=Number(prompt("Enter the number of habits you want to track"));
+            let habits=[];
+            let completed=[];
+            for(let i=0;i<numHabits;i++){
+                let habit=prompt("Enter habit "+(i+1)+":");
+                habits.push(habit);
+                completed.push(false);
+            }
+            return[numHabits,habits,completed];
+        }
+        
+    function markHabitsAsCompleted(numHabits,completed){
+        let habitCompleted=prompt(" Enter the number of the habits you completed separate with commas ");
+        let habitNumbers=habitCompleted.split(',');
+        for(let num of habitNumbers){
+            let habitNum=Number(num.trim());
+            if(habitNum>0 && habitNum<=numHabits){
+            completed[habitNum-1]=true;
+        alert("Habit-"+habitNum+" marked as completed");
+            }
+            else{
+                alert("invalid number");
+            }
+        }
+    }
+
+    function showStatus(numHabits,habits,completed){
+        let result="Habit tracker status\n";
+        for(let i=0;i<numHabits;i++){
+            result +=(i+1)+":"+habits[i];
+            result += completed[i]?"- Completed\n":"- pending\n";
+        }
+        alert(result);
+    }
+
+    let [numHabits,habits,completed]=getHabits();
+    while(true){
+        let menu="Menu\n1.Mark a habit as completed\n2.View status\n.3.Quit\n";
+        let choice=prompt(menu);
+        if(choice=='1'){
+            markHabitsAsCompleted(numHabits,completed);
+        }
+        else if(choice=='2'){
+            showStatus(numHabits,habits,completed);
+        }
+        else if(choice=='3'){
+            alert("quitting");
+            break;
+        }
+        else{
+            alert("invalid choice");
+        }
+    }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Habit Tracker With Session Storage</h1>
+    <script>
+        function getHabits(){
+            let numHabits=Number(prompt("Enter the number of habits you want to track"));
+            let habits=[];
+            let completed=[];
+            for(let i=0;i<numHabits;i++){
+                let habit=prompt("Enter the habit"+(i+1)+":");
+                habits.push(habit);
+                completed.push(false);
+            }
+            // setItem saves to local storage
+            localStorage.setItem("numHabits",numHabits);
+            localStorage.setItem("habits",JSON.stringify(habits));
+            localStorage.setItem("completed",JSON.stringify(completed));
+ return[habits,completed,numHabits];
+        }
+        function markHabitsAsCompleted(numHabits,completed){
+            let habitCompleted=prompt("Enter the numbers of the habits you completed, separated by commas");
+            let numbersHabit=habitCompleted.split(',');
+            for(num of numbersHabit){
+                let noHabit=Number(num.trim());
+                if(noHabit>0 && noHabit<=numHabits){
+                    completed[noHabit-1]=true;
+                    alert("Habit"+noHabit+"is marked as completed");
+                }
+                else{
+                    alert("Invalid Number");
+                }
+            }
+            // the updated value is saved to local storage
+            localStorage.setItem("completed",JSON.stringify(completed));
+        }
+        function showStatus(numHabits,habits,completed){
+            let result="Habit Tracker Status\n";
+            for(let i=0;i<numHabits;i++){
+                result +=(i+1)+"."+habits[i];
+                result +=completed[i]?"completed\n":"pending\n";
+            }
+            alert(result);
+        }
+        
+        let numHabits,habits,completed;
+        
+        if(localStorage.getItem("completed") && localStorage.getItem("habits")){
+            numHabits=Number(localStorage.getItem("numHabits"));
+            habits=JSON.parse(localStorage.getItem("habits"));
+            completed=JSON.parse(localStorage.getItem("completed"));
+        }
+        else{
+            [numHabits,habits,completed]=getHabits();
+        }
+
+
+        let menu="Menu\n1.Mark a habit as completed\n2.Show Habit Tracker status\n3.Quit\n";
+    
+        while(true){
+            let choice=prompt(menu);
+            if(choice=='1'){
+                markHabitsAsCompleted(numHabits,completed)
+            }
+            else if(choice=='2'){
+                showStatus(numHabits,habits,completed)
+            }
+            else if(choice=='3'){
+                alert("Quitting...");
+                break;
+            }
+            else{
+                alert("invalid choice");
+            }
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi</h1>
+    <script>
+        // let person={
+        //     name:'ann',
+        //     age:30,
+        //     gender:'male',
+        //     greet:function(){
+        //         console.log("hello"+this.name);
+        //     }
+        // };
+        // console.log(person.name);
+        // console.log(person.gender);
+        // person.greet();
+        // person.city="New York";
+        // person.sayGoodBye=function(){
+        //     console.log("goodBye");
+        // }
+        // person.sayGoodBye();
+
+        // 
+//         let student={
+//             name:'abc',
+//             subjects:{
+//                 math,
+//                 chem,
+//                 physics,
+
+//             },
+//             marks:{
+//                 math:90,
+//                 chem:86,
+//                 phsyics:75
+//             },
+//             calculateAverage:function(){
+//                 avgMark=length(this.marks)/length(this.subjects);
+//                 return avgMark;
+//             },
+//             addSubject:function(){
+// student.subject=prompt("enter subject name");
+// student.marks=prompt("enter marks for subject");
+//             },
+//             displayInfo:function(){
+//                 return "Student Name:"+this.name+"Subjects"+this.subjects+"Marks"+this.marks+console.log(thhis.caculateAverage());
+//             }
+//         }
+let student={
+    name:'ABC',
+    subjects:['math','chemistry','physics'],
+    marks:[90,86,75],
+    calculateAverage:function(){
+        let sum=0;
+        for(mark of this.marks){
+            sum +=mark;
+        }
+       let avg=sum/this.marks.length;
+        return avg;
+    },
+    addSubject:function(){
+        let newSubject=prompt("Enter the subject name:");
+        let newMark=Number(prompt("Enter the marks for"+newSubject+":"));
+        this.subjects.push(newSubject);
+       this. marks.push(newMark);
+    },
+
+displayInfo:function(){
+    let info="Student Name:"+this.name+"\n";
+    for(let i=0;i<this.marks.length;i++){
+info +=this.subjects[i]+":"+this.marks[i]+"\n";
+    }
+    info +="Average:"+this.calculateAverage()+"\n";
+    alert(info);
+}
+}
+student.displayInfo();
+student.addSubject();
+student.displayInfo();
+    </script>
+</body>
+</html>
