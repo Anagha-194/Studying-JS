@@ -1,0 +1,72 @@
+<!-- Learn and understand variables and data types, operators -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable Tracker</title>
+  </head>
+
+  <body>
+    <h1>
+      This is a console based program to understand var, let and const(with
+      special focus on hoisting and scope)
+    </h1>
+    <p>
+      Please open the console (where the magic happens) by clicking ctrl+shift+I
+      or F12
+    </p>
+    <script>
+console.log("Welcome to JS variable explorer!");
+console.log("In this tool, you can test and understand how var, let and const work.");
+console.log("To start, choose a variable type: var, let, or const");
+
+let choice = prompt("Please choose a variable type: (var, let, or const)");
+
+function experiment(variableType) {
+  console.log("Experiment starts:");
+  
+  if (variableType == 'var') {
+    console.log("You have chosen 'var'.");
+    console.log("var is function scoped and is hoisted to the top of its scope.");
+
+    
+    console.log("Let us understand this with an example:");
+    
+    console.log("Hoisted var before declaration:", test);  
+    var test = 10;
+    console.log("First declaration:", test);  
+    var test = 20;
+    console.log("Redeclared var:", test); 
+  }
+  else if(variableType=='let'){
+    console.log("You have chosen 'let'.");
+    console.log("let is block scoped and it is not hoisted to the top ");
+    console.log("let us declare a variable using let");
+    let test=10;
+    console.log("first declaration",test);
+    console.log("let test=20;");
+    console.log("this will throw an error because let is block scoped and cannot be redeclared in the same scope");
+ 
+  }
+  else{
+    console.log("You have chosen 'const'.");
+    console.log("const is block scoped and it is not hoisted to the top");
+    console.log("let us try with an example");
+    const test=10;
+    console.log("first declaration",test);
+    console.log("redeclaring const to test=20 will throw an error because const is block scoped and cannot be redelared in the same scope");
+    console.log("const test=20;");
+    console.log("this will throw an error because const is block scoped and cannot be redeclared in the same scope");
+
+  }
+  console.log("experiment ends");
+
+}
+
+experiment(choice.toLowerCase());
+
+      </script>
+  </body>
+</html>
