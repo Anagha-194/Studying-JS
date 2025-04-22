@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic User Info</title>
+</head>
+<body>
+    <h1>This is a dynamic user info program</h1>
+    <script>
+        let name=prompt("Enter your name:");
+        let age=Number(prompt("Enter your age"));
+        let isStudent=confirm("Are you a student?");
+        let middleName=prompt("Enter your middle name:");
+        let email=prompt("Enter your email:");
+        
+        
+       
+        while (true){
+  let choice = prompt("Choose an option:\n1. View Info\n2. Update Name\n3. Update Age\n4. Update Student Status\n5. Update Middle Name\n6. Update Email\n7. Exit");
+            if(choice=='1'){
+                console.log(name);
+                console.log(age);
+                console.log(isStudent);
+                console.log(middleName);
+                console.log(email);
+                
+            }
+            else if(choice=='2'){
+                updateName();
+                
+            }
+            else if(choice=='3'){
+                updateAge();
+                
+            }
+            else if(choice=='4'){
+                updateStudentStatus();
+                
+            }
+            else if(choice=='5'){
+                updateMiddleName();
+                
+            }
+            else if(choice=='6'){
+                updateEmail();
+                
+            }
+            else{
+                  console.log("exiting");
+                  break;
+            }
+            
+        }
+function updateName(){
+    newName=prompt("Enter new name:");
+    alert("Name updated successfully!");
+    name=newName;
+}
+function updateAge(){
+    newAge=Number(prompt("Enter new age:"));
+    alert("Age updated successfully!");
+    age=newAge;
+}
+function updateStudentStatus(){
+    newStudentStatus=confirm("Are you a student?");
+    alert("Student status updated successfully!");  
+    isStudent=newStudentStatus;
+}
+function updateMiddleName(){
+    newMiddleName=prompt("Enter new middle name:");
+    alert("Middle name updated successfully!");
+    middleName=newMiddleName;
+}
+function updateEmail(){
+    newEmail=prompt("Enter new email:");
+    alert("Email updated successfully!");
+    email=newEmail;
+}
+
+    </script>
+</body>
+</html>
